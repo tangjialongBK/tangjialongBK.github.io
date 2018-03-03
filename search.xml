@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[周未愉快]]></title>
-    <url>%2F2018%2F03%2F03%2FSaturday%2F</url>
-    <content type="text"><![CDATA[前端之路 从学习css到javascript至此已经过去3个月了，css目前全线毕业，js还在苦苦挣扎中，每天都在考验记忆力，有时候写案例，用css布局时，发现有一些代码明显记不清了，没办法只能上网搜索，当然这只是小部分而已，可能是不常用的代码，虽然之前有去背，可是用的少还是会忘记的！对于js，可能是没有基础，学起来确实是很费劲，有时候明显懂了，可是拿个案例出来，才发现原来还是不懂。js逻辑性太强了，很容易被带沟里去，不过现在总算也还好，不好也不差，起码已经没有之前那么费劲了，只要多练应该也能过去的！！ 对于新手学习前端，个人觉得最好是用不带代码提示的编写工具进行编写，比如：Editplus 这个软件真的挺不错的，对于新手觉得好用，我现在还一直有保留！ 软件分享地址：https://www.editplus.com/]]></content>
-      <tags>
-        <tag>心情日志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[sublime text3下载与安装]]></title>
     <url>%2F2018%2F03%2F03%2Fjavasript_1%2F</url>
     <content type="text"><![CDATA[Sublime 常用插件 SideBarEnhancements SideBarEnhancements是一个侧边栏增强工具，可以打开本地的文件夹reveal，可以修改名字rename，可也以移动move等等。他还以一个非常有用的功能，配置相应的快捷键打开特定的浏览器，只需要在Side Bar中的Key Bindings User里面设置如下代码：12345678910111213141516171819202122232425262728293031323334[ //chrome &#123; &quot;keys&quot;: [&quot;f1&quot;], &quot;command&quot;: &quot;side_bar_files_open_with&quot;, &quot;args&quot;: &#123; &quot;paths&quot;: [], &quot;application&quot;: &quot;C:/Program Files (x86)/Google/Chrome/Application/chrome.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; //匹配任何文件类型 &#125; &#125;, //firefox &#123; &quot;keys&quot;: [&quot;f2&quot;], &quot;command&quot;: &quot;side_bar_files_open_with&quot;, &quot;args&quot;: &#123; &quot;paths&quot;: [], &quot;application&quot;: &quot;E:/前端/firefox-56.0.2-2017102416.en-US.win32-tete009-sse2-pgo/firefox.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; &#125; &#125;, //ie &#123; &quot;keys&quot;: [&quot;f3&quot;], &quot;command&quot;: &quot;side_bar_files_open_with&quot;, &quot;args&quot;: &#123; &quot;paths&quot;: [], &quot;application&quot;: &quot;C:/Program Files/Internet Explorer/iexplore.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; &#125; &#125;, //safari /*&#123; &quot;keys&quot;: [&quot;f5&quot;], &quot;command&quot;: &quot;side_bar_files_open_with&quot;, &quot;args&quot;: &#123; &quot;paths&quot;: [], &quot;application&quot;: &quot;D:/Program Files/Safari/safari.exe&quot;, &quot;extensions&quot;:&quot;.*&quot; &#125; &#125;*/] 每一个的application是具体的浏览器的地址。 A File Icon 一个显示文件图标的插件，图标库还算全Boxy Theme 上面的图标结合这个主题用起来也是不错的liveReload 这个一个自动刷新的插件，需要在chrome与sublime中同时安装。sublime中安装直接搜索安装就可以，chrome可以去应用商店安装（使用科学上网工具）。如果没有科学上网工具，提供一个离线版本livereload，下载解压，使用时直接到谷歌的扩展程序页面把.crx后缀的文件直接拖进去。勾选允许访问本地文件。使用时候点一下这个插件让空心变实心。sublime 最新版需要开启插件simple Reload。在同时需要setting user中插入一下代码1&#123;&quot;enabled_plugins&quot;: [&quot;SimpleReloadPlugin&quot;,&quot;SimpleRefresh&quot;]&#125; PackageResourceViewer 可以直接查看并修改系统文件。ctrl+shift+p==&gt;PackageResourceViewer。可以去里面查找相应的文件BracketHighlighter 括号高亮插件。具体使用查看：http://www.itwoa.com/post/3.html可以结合上面的插件修改默认配置文件cTags 可以跳转到函数定义位置。具体查看http://www.piaoyi.org/php/Sublime-Text-CTags.html左上角没有新建使用 ctrl+t ctrl+r组合快捷键下载连接 Sublime Text3 激活码12345678910111213----- BEGIN LICENSE -----eldonSingle User LicenseEA7E-1122628C0360740 20724B8A 30420C09 6D7E046F3F5D5FBB 17EF95DA 2BA7BB27 CCB1494727A316BE 8BCF4BC0 252FB8FF FD97DF71B11A1DA9 F7119CA0 31984BB9 7D71700C2C728BF8 B952E5F5 B941FF64 6D7979DAB8EB32F8 8D415F8E F16FE657 A35381CC290E2905 96E81236 63D2B06D E5F01A6984174B79 7C467714 641A9013 94CA7162------ END LICENSE ------]]></content>
+      <categories>
+        <category>常用工具总结</category>
+      </categories>
       <tags>
         <tag>javacript</tag>
       </tags>
@@ -20,6 +15,9 @@
     <title><![CDATA[周未愉快]]></title>
     <url>%2F2018%2F03%2F03%2Fmood_1%2F</url>
     <content type="text"><![CDATA[前端之路 从学习css到javascript至此已经过去3个月了，css目前全线毕业，js还在苦苦挣扎中，每天都在考验记忆力，有时候写案例，用css布局时，发现有一些代码明显记不清了，没办法只能上网搜索，当然这只是小部分而已，可能是不常用的代码，虽然之前有去背，可是用的少还是会忘记的！对于js，可能是没有基础，学起来确实是很费劲，有时候明显懂了，可是拿个案例出来，才发现原来还是不懂。js逻辑性太强了，很容易被带沟里去，不过现在总算也还好，不好也不差，起码已经没有之前那么费劲了，只要多练应该也能过去的！！ 对于新手学习前端，个人觉得最好是用不带代码提示的编写工具进行编写，比如：Editplus 这个软件真的挺不错的，对于新手觉得好用，我现在还一直有保留！ 软件分享地址：https://www.editplus.com/]]></content>
+      <categories>
+        <category>生活日志</category>
+      </categories>
       <tags>
         <tag>心情日志</tag>
       </tags>
@@ -28,6 +26,9 @@
     <title><![CDATA[心酸的安装与调试]]></title>
     <url>%2F2018%2F03%2F03%2Fgithub_1%2F</url>
     <content type="text"><![CDATA[Github从安装到一步一步调试，中间曲折真的是多,我遭遇的几个问题！第一，密钥SSH 当拿到密钥以后就是用Git进行验证!—- $ ssh -T git@github.com # 注意邮箱地址不用改 然后在Git里发现并没有提示这一句：Are you sure you want to continue connecting (yes/no)? 当时就傻眼了，心想吧，才开始就出现这种问题，内心有点不安，开始疯狂查资料，把密钥删除然后再添加、把window用户目录底下的ssh\id_rsa.pub文件删除再用命令生成…..等等，来回测试结果得到的结果还是一样报错。 其时这个问题是出在那呢？问题其时就是出在密钥，当密钥出问题后，我们的本能反应是删除，然后接着添加，但是只要仔细观察会发现，删除之后再添加得到的密钥号是一样的，既然是一样那这样来回操作就起不了作用！要如何使获得不一样的密钥号呢？其时很简单，只要保留旧的，再添加新，这样获得的密钥号就是最新的，然后再进行验证，结果通过了！！！ 最后给大家推荐百分之百无误复制window底下的密钥码。首先输入：cd .ssh/ 然后再输入： ls 最后再输入： cat id_rsa.pub 然后就可以看到window底下的密钥码了，接下来复制出来就行了。第二，在hexo下面操作hexo init 这里要注意一个问题，千万不能把hexo文件建在Git下面或与Git同级的根目录下，不然运行这句代码，它会毫不留情的给我们报个错！解决方法：只要把hexo文件夹移出来，单独给个文件夹就OK了！ 如果说已经建了怎么并运行到这一步的时候，怎么办呢？告诉你大胆点直接把hexo删除了，从hexo开始一步一步再进行一遍即可。 到此我的Github已经基本配制OK了！零基础安装推荐上传报错问题1 hexo s 打开服务端口报：ERROR Plugin load failed:hexo-deployer-git2 hexo g 生成静态页面至public目录时报：ERROR Plugin load failed:hexo-deployer-git3 hexo d 部署到GitHub时报：ERROR Plugin load failed:hexo-deployer-git4 以上三个问题同属于一类，解决方案： 输入代码：cnpm install hexo-deployer-git –save 再输入：hexo clean 清除缓存 再输入：hexo g 重新生成静态页面至public目录 再输入：hexo d 重新部署到GitHub]]></content>
+      <categories>
+        <category>安装经历</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
