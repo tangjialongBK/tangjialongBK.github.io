@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title></title>
+    <url>%2F2018%2F03%2F03%2FSaturday%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[心酸的安装与调试]]></title>
     <url>%2F2018%2F03%2F03%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Github从安装到一步一步调试，中间曲折真的是多,我遭遇的几个问题！第一，密钥SSH 当拿到密钥以后就是用Git进行验证！—-$ ssh -T git@github.com # 注意邮箱地址不用改 然后在Git里发现并没有提示这一句：Are you sure you want to continue connecting (yes/no)? 当时就傻眼了，心想吧，才开始就出现这种问题，内心有点不安，开始疯狂查资料，把密钥删除然后再添加、把window用户目录底下的ssh\id_rsa.pub文件删除再用命令生成…..等等，来回测试结果得到的结果还是一样报错。 其时这个问题是出在那呢？问题其时就是出在密钥，当密钥出问题后，我们的本能反应是删除，然后接着添加，但是只要仔细观察会发现，删除之后再添加得到的密钥号是一样的，既然是一样那这样来回操作就起不了作用！要如何使获得不一样的密钥号呢？其时很简单，只要保留旧的，再添加新，这样获得的密钥号就是最新的，然后再进行验证，结果通过了！！！ 最后给大家推荐百分之百无误复制window底下的密钥码。首先输入：cd .ssh/ 然后再输入： ls 最后再输入： cat id_rsa.pub 然后就可以看到window底下的密钥码了，接下来复制出来就行了。第二，在hexo下面操作hexo init 这里要注意一个问题，千万不能把hexo文件建在Git下面或与Git同级的根目录下，不然运行这句代码，它会毫不留情的给我们报个错！解决方法：只要把hexo文件夹移出来，单独给个文件夹就OK了！ 如果说已经建了怎么并运行到这一步的时候，怎么办呢？告诉你大胆点直接把hexo删除了，从hexo开始一步一步再进行一遍即可。 到此我的Github已经基本配制OK了！零基础安装推荐上传报错问题1 hexo s 打开服务端口报：ERROR Plugin load failed:hexo-deployer-git2 hexo g 生成静态页面至public目录时报：ERROR Plugin load failed:hexo-deployer-git3 hexo d 部署到GitHub时报：ERROR Plugin load failed:hexo-deployer-git4 以上三个问题同属于一类，解决方案： 输入代码：cnpm install hexo-deployer-git –save 再输入：hexo clean 清除缓存 再输入：hexo g 重新生成静态页面至public目录 再输入：hexo d 重新部署到GitHub]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>
