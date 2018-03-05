@@ -27,10 +27,10 @@
     <url>%2F2018%2F03%2F05%2Fjavasript_1%E4%BB%BFJQ%E5%86%85%E5%AE%B9%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85%E5%8C%85%E5%85%BC%E5%AE%B9IE8%E4%BB%A5%E4%B8%8B%2F</url>
     <content type="text"><![CDATA[操作原理解析123456789101112131415161718192021 window.ready(function()&#123; //执行语句&#125;);function ready(fn)&#123; if(document.addEventListener)&#123;//标准浏览器下执行 document.addEventListener(&apos;DOMContentLoaded&apos;,function()&#123; fn(); document.removeEventListener(&apos;DOMContentloaded&apos;, arguments.callee, false) &#125;,false); &#125;else&#123; document.attachEvent(&apos;onreadystatechange&apos;,function()&#123;//IE浏览器下执行 if(document.readyState == &apos;complete&apos;)&#123;//文档加载完毕了 fn(); document.detachEvent(&apos;onreadystatechange&apos;,arguments.callee); &#125; &#125;); &#125;&#125; 首先要驱分在addEventListener和attachEvent，一个是在标准浏览器下能完全运行，一个是针对IE浏览器运行的！ addEventListener(监听事件，函数，false或true)false是冒泡，true捕获 detachEvent(监听事件，函数)与addEventListener用法不同的是detachEvent默认的是冒泡，值得注意的是detachEvent的监听事件必须要加上‘on’! arguments.callee可以理解谁触发当前函数，它就代表谁，我是用它来移除当前被监听的函数。]]></content>
       <categories>
-        <category>javacript</category>
+        <category>javascript</category>
       </categories>
       <tags>
-        <tag>javacript</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -38,10 +38,10 @@
     <url>%2F2018%2F03%2F04%2Fjavasript_1%E4%BB%BFJQ%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[操作原理解析1234567891011121314151617function obj(option)&#123; var typeoF=typeof option; if(typeoF==&apos;string&apos;)&#123; var newOB=option.substring(1); var newOBJ=document.getElementsByClassName(newOB)[0]; &#125;else if(typeoF==&apos;function&apos;)&#123; option(); &#125; var Obj=&#123; css:function(attr,val)&#123; newOBJ.style[attr]=val; return Obj; &#125; &#125; return Obj;&#125;obj(&apos;传一个标签的类名&apos;).css(&apos;宽或高&apos;,&apos;大小像素&apos;).css(&apos;背景&apos;,&apos;颜色&apos;)....等等可以传入多个类型，看需求; 首先用一个写名函数传一个实参 声明一个变量接收传进来的实参，并拿到内型 如果传进来的是字符串行就执行，用substring截取 接下来我们就要通过document获取同样是用变量接收 如果传送来的是个函数那就直接执行，在这里可以用一个return返回一个false，那么如果是函数的话，执行完以后，就跳出了，下面的代码也不会再执行了！ 声明一个json对象Obj在里面放一个函数用CSS样式通过return返回出来，我们这时候再用传值就行了！有一点，如果，要写多个样式，一定要加个return返回出来，以便多次调用！123css:function(attr,val)&#123; newOBJ.style[attr]=val; return Obj;]]></content>
       <categories>
-        <category>javacript</category>
+        <category>javascript</category>
       </categories>
       <tags>
-        <tag>javacript</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -52,7 +52,7 @@
         <category>常用工具总结</category>
       </categories>
       <tags>
-        <tag>javacript</tag>
+        <tag>javascript</tag>
       </tags>
   </entry>
   <entry>
