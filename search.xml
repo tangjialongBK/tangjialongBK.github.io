@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[一个字"热"]]></title>
+    <url>%2F2018%2F03%2F05%2Fmood_2%E5%8A%AA%E5%8A%9B%20%2F</url>
+    <content type="text"><![CDATA[努力，努力！！！ 哎，最近深圳天气升的很快，有时候真的觉得很热，感觉心情都不是很好！！！莫名的烦燥，看过写过的东西都记不住了！捉急……. 今天早上搭公车上班,结果塞成狗,两三个站花了近半小时,看着都慌,没法了只能再去感受一下地铁的人流,人真是多的跟蚂蚁一样,我就感觉我不是自己上去的,而是被挤上去的……. 此时此刻,我只想说:”有车真好”! 努力加油~~]]></content>
+      <categories>
+        <category>随笔日志</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[仿JQ内容加载函数封装包兼容IE8以下]]></title>
     <url>%2F2018%2F03%2F05%2Fjavasript_1%E4%BB%BFJQ%E5%86%85%E5%AE%B9%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85%E5%8C%85%E5%85%BC%E5%AE%B9IE8%E4%BB%A5%E4%B8%8B%2F</url>
     <content type="text"><![CDATA[操作原理解析123456789101112131415161718192021 window.ready(function()&#123; //执行语句&#125;);function ready(fn)&#123; if(document.addEventListener)&#123;//标准浏览器下执行 document.addEventListener(&apos;DOMContentLoaded&apos;,function()&#123; fn(); document.removeEventListener(&apos;DOMContentloaded&apos;, arguments.callee, false) &#125;,false); &#125;else&#123; document.attachEvent(&apos;onreadystatechange&apos;,function()&#123;//IE浏览器下执行 if(document.readyState == &apos;complete&apos;)&#123;//文档加载完毕了 fn(); document.detachEvent(&apos;onreadystatechange&apos;,arguments.callee); &#125; &#125;); &#125;&#125; 首先要驱分在addEventListener和attachEvent，一个是在标准浏览器下能完全运行，一个是针对IE浏览器运行的！ addEventListener(监听事件，函数，false或true)false是冒泡，true捕获 detachEvent(监听事件，函数)与addEventListener用法不同的是detachEvent默认的是冒泡，值得注意的是detachEvent的监听事件必须要加上‘on’! arguments.callee可以理解谁触发当前函数，它就代表谁，我是用它来移除当前被监听的函数。]]></content>
