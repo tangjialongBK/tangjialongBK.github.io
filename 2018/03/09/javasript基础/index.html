@@ -84,7 +84,7 @@
 
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="javascript 基础," />
 
 
 
@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="操作原理解析123456789101112131415161718192021 window.ready(function()&amp;#123;    //执行语句&amp;#125;);function ready(fn)&amp;#123;    if(document.addEventListener)&amp;#123;//标准浏览器下执行        document.addEventListener(&amp;apos">
-<meta name="keywords" content="javascript">
+<meta name="description" content="for循环理解 js中for循环是比较常见的，一般用于处理多个对象！ 下面说下我个人对for循环的一个理解：123for(var i=0;i&amp;lt;10;i++)&amp;#123;	console.log(i);//0 1 2 3 4 5 6 7 8 9&amp;#125;     从上面代码可以看出，在我们打开网页后这个就已经运行完了，打印的结果就是0123456789； 下面解析一下他的一个运行步奏： 代">
+<meta name="keywords" content="javascript 基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="仿JQ内容加载函数封装包兼容IE8以下">
-<meta property="og:url" content="http://yoursite.com/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/index.html">
+<meta property="og:title" content="Javascript for循环">
+<meta property="og:url" content="http://yoursite.com/2018/03/09/javasript基础/index.html">
 <meta property="og:site_name" content="Tang个人博客">
-<meta property="og:description" content="操作原理解析123456789101112131415161718192021 window.ready(function()&amp;#123;    //执行语句&amp;#125;);function ready(fn)&amp;#123;    if(document.addEventListener)&amp;#123;//标准浏览器下执行        document.addEventListener(&amp;apos">
+<meta property="og:description" content="for循环理解 js中for循环是比较常见的，一般用于处理多个对象！ 下面说下我个人对for循环的一个理解：123for(var i=0;i&amp;lt;10;i++)&amp;#123;	console.log(i);//0 1 2 3 4 5 6 7 8 9&amp;#125;     从上面代码可以看出，在我们打开网页后这个就已经运行完了，打印的结果就是0123456789； 下面解析一下他的一个运行步奏： 代">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T17:02:07.065Z">
+<meta property="og:updated_time" content="2018-03-09T15:58:46.982Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="仿JQ内容加载函数封装包兼容IE8以下">
-<meta name="twitter:description" content="操作原理解析123456789101112131415161718192021 window.ready(function()&amp;#123;    //执行语句&amp;#125;);function ready(fn)&amp;#123;    if(document.addEventListener)&amp;#123;//标准浏览器下执行        document.addEventListener(&amp;apos">
+<meta name="twitter:title" content="Javascript for循环">
+<meta name="twitter:description" content="for循环理解 js中for循环是比较常见的，一般用于处理多个对象！ 下面说下我个人对for循环的一个理解：123for(var i=0;i&amp;lt;10;i++)&amp;#123;	console.log(i);//0 1 2 3 4 5 6 7 8 9&amp;#125;     从上面代码可以看出，在我们打开网页后这个就已经运行完了，打印的结果就是0123456789； 下面解析一下他的一个运行步奏： 代">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/09/javasript基础/"/>
 
 
 
 
 
-  <title>仿JQ内容加载函数封装包兼容IE8以下 | Tang个人博客</title>
+  <title>Javascript for循环 | Tang个人博客</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/09/javasript基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="留不住的岁月">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">仿JQ内容加载函数封装包兼容IE8以下</h1>
+          <h1 class="post-title" itemprop="name headline">Javascript for循环</h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T00:30:26+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T19:52:45+08:00">
+                2018-03-09
               </time>
             
 
@@ -404,21 +404,52 @@
 
       
         <blockquote>
-<h2 id="操作原理解析"><a href="#操作原理解析" class="headerlink" title="操作原理解析"></a>操作原理解析</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> window.ready(function()&#123;</span><br><span class="line"></span><br><span class="line">    //执行语句</span><br><span class="line"></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">function ready(fn)&#123;</span><br><span class="line">    if(document.addEventListener)&#123;//标准浏览器下执行</span><br><span class="line">        document.addEventListener(&apos;DOMContentLoaded&apos;,function()&#123;</span><br><span class="line">            fn();</span><br><span class="line">            document.removeEventListener(&apos;DOMContentloaded&apos;, arguments.callee, false)</span><br><span class="line">        &#125;,false);</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        document.attachEvent(&apos;onreadystatechange&apos;,function()&#123;//IE浏览器下执行</span><br><span class="line">            if(document.readyState == &apos;complete&apos;)&#123;//文档加载完毕了</span><br><span class="line">                 fn();</span><br><span class="line">                 document.detachEvent(&apos;onreadystatechange&apos;,arguments.callee);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<blockquote>
-<ol>
-<li>首先要驱分在addEventListener和attachEvent，一个是在标准浏览器下能完全运行，一个是针对IE浏览器运行的！</li>
-<li>addEventListener(监听事件，函数，false或true)false是冒泡，true捕获</li>
-<li>detachEvent(监听事件，函数)与addEventListener用法不同的是detachEvent默认的是冒泡，值得注意的是detachEvent的监听事件必须要加上‘on’!</li>
-<li>arguments.callee可以理解谁触发当前函数，它就代表谁，我是用它来移除当前被监听的函数。
-
-
+<h2 id="for循环理解"><a href="#for循环理解" class="headerlink" title="for循环理解"></a>for循环理解</h2><ul>
+<li>js中for循环是比较常见的，一般用于处理多个对象！</li>
+<li>下面说下我个人对for循环的一个理解：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(var i=0;i&lt;10;i++)&#123;</span><br><span class="line">	console.log(i);//0 1 2 3 4 5 6 7 8 9</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
+</ul>
+</blockquote>
+<ul>
+<li>从上面代码可以看出，在我们打开网页后这个就已经运行完了，打印的结果就是0123456789；</li>
+<li>下面解析一下他的一个运行步奏：</li>
+<li>代码从0开始，然后比较是不是小于10，是就打印一个0，然后到i++自加1然后又到比较是不是小于10，是的打印1…….然后一直到10然后比较，10小于10吗？不是，跳出循环！</li>
+<li>基实很简单：运行步奏就是:i=0,i&lt;10,打印，i++,i&lt;10,打印,i++,i&lt;10,打印,i++,i&lt;10,打印……直到i超出10就结束了！</li>
+<li><p>下面说一下for循环嵌套for循环再嵌套for循环的一个运行理论：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">for(var i=0;i&lt;3;i++)&#123;</span><br><span class="line">	for(var e=0;e&lt;3;e++)&#123;</span><br><span class="line">		for(var m=0;m&lt;3;m++)&#123;</span><br><span class="line">			//console.log(m)//012   9次</span><br><span class="line">			//console.log(i)//012   每个数字9次</span><br><span class="line">			//console.log(e)//012   每个数字6次</span><br><span class="line">		&#125;</span><br><span class="line">		//console.log(e)//012 6次</span><br><span class="line">		//console.log(m)//3 9次</span><br><span class="line">	&#125;</span><br><span class="line">		//console.log(i)//123  1次</span><br><span class="line">		//console.log(m)//3   3次</span><br><span class="line">		//console.log(e)//3    3次</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在最里面的for中打印m时012重复打印9次，外层开始i=0,i&lt;3进入第二层e=0,e&lt;3进入第三层m=0,m&lt;3,打印，m++，m&lt;3，打印，m++，m&lt;3，打印，再跳外层i++，i&lt;3再进入第二层e++，e&lt;3再进入第三层m=0,m&lt;3,打印，m++，m&lt;3，打印，m++，m&lt;3，打印…..到至可以发现从第一层依次第三层打印3次，二层进三层又打印3次，第三层自己再打印3次！一共就9次！！！</p>
+</li>
+<li>console.log(m)//3 9次说下这个是怎么运算的，首先这个打印结果是在最里层for的外面,在这外面就好比：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> for(var m=0;m&lt;3;m++)&#123;</span><br><span class="line"> console.log(m)//012</span><br><span class="line">&#125;</span><br><span class="line">console.log(m)//3</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>从上面可以看出来外面打印的是最后一次的结果:3，里面是打印循环的次数012，为什么打印的3是9次呢？这个原理跟上面的一样了，从外面到最里面，从0-2开始0是一次从外到内的循环打印3次，以此类推1也是3次，2也是3次，所以9次就出来了。</p>
+<ul>
+<li>其它的也是这样的方法，代码解析是从上到下，就for而言是从外到内，一步一步计算的！</li>
+</ul>
+<h2 id="for循环的节能写法"><a href="#for循环的节能写法" class="headerlink" title="for循环的节能写法"></a>for循环的节能写法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a=[1,12,3];</span><br><span class="line">for(var i=0;i&lt;a.length;i++)&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>上面是最常规写法，每次到比较的时候都要调用一次a.length,也就是说每一次都要去计算一次，这样就很影响性能，所以可以把它保存起来比如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(var i=0,b=a.length;i&lt;b;i++)&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样就减少了每次的调用！</p>
+<h4 id="第二次方法也节能可是并不是适应所有"><a href="#第二次方法也节能可是并不是适应所有" class="headerlink" title="第二次方法也节能可是并不是适应所有"></a>第二次方法也节能可是并不是适应所有</h4><ul>
+<li>首先要明白：”为假的6种情况：false,0,NAN,undefined,null，’’,”而变量本身默认有个值就是undefined，所以可以这样改：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a=[1,12,3];</span><br><span class="line">for(var i=0;a[++i])&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>每次i都自己去+，一直到找到不为值，而默认值是undefined，如果为它就结束了，可是有个问题存在，就是如果这个i拿到是个为假的6种情况，那么循环也会自动结束！</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>当然以上说法只属个人理解，如果有不对的地方，可以留言指出，讨论讨论！！</li>
+</ul>
 </blockquote>
 </blockquote>
+</blockquote>
+
+
+
 
       
     </div>
@@ -435,17 +466,17 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <!-- <p><span>本文标题:</span><a href="/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/">仿JQ内容加载函数封装包兼容IE8以下</a></p> -->
-  <p><span>本文链接:</span><a href="/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/" title="仿JQ内容加载函数封装包兼容IE8以下">http://yoursite.com/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/</a> <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/"  aria-label="复制成功！"></i></span>
+  <!-- <p><span>本文标题:</span><a href="/2018/03/09/javasript基础/">Javascript for循环</a></p> -->
+  <p><span>本文链接:</span><a href="/2018/03/09/javasript基础/" title="Javascript for循环">http://yoursite.com/2018/03/09/javasript基础/</a> <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/09/javasript基础/"  aria-label="复制成功！"></i></span>
   </p>
   <p>
     <span>本文作者:</span><a href="/" title="访问 留不住的岁月 的个人博客">留不住的岁月</a>    
   </p>
   <p>
-    <span>发布时间:</span>2018年03月05日 - 00:03    
+    <span>发布时间:</span>2018年03月09日 - 19:03    
   </p>
   <p>
-    <span>最后更新:</span>2018年03月06日 - 01:03
+    <span>最后更新:</span>2018年03月09日 - 23:03
   </p>
   
    
@@ -505,7 +536,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" <i class="fa fa-tag"></i> javascript</a>
+            <a href="/tags/javascript-基础/" <i class="fa fa-tag"></i> javascript 基础</a>
           
         </div>
       
@@ -518,8 +549,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/04/javasript_1仿JQ操作/" rel="next" title="仿JQ操作CSS">
-                <i class="fa fa-chevron-left"></i> 仿JQ操作CSS
+              <a href="/2018/03/06/javasript正则/" rel="next" title="Javascript正则">
+                <i class="fa fa-chevron-left"></i> Javascript正则
               </a>
             
           </div>
@@ -527,10 +558,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/05/mood_2努力 /" rel="prev" title="一个字"热"">
-                一个字"热" <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -680,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作原理解析"><span class="nav-number">1.</span> <span class="nav-text">操作原理解析</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#for循环理解"><span class="nav-number">1.</span> <span class="nav-text">for循环理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for循环的节能写法"><span class="nav-number">2.</span> <span class="nav-text">for循环的节能写法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第二次方法也节能可是并不是适应所有"><span class="nav-number">2.0.1.</span> <span class="nav-text">第二次方法也节能可是并不是适应所有</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
