@@ -84,7 +84,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript作用域," />
 
 
 
@@ -95,16 +95,18 @@
 
 
 
-<meta name="description" content="执着一份不知道结果的事，抹去这份未知的遗憾！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tang个人博客">
-<meta property="og:url" content="http://yoursite.com/categories/javascript/index.html">
+<meta name="description" content="作用域 对于我来说作用域也确实是个比较难学的一章了，而且这个又是整个JS中比较重要的章节！ 在这章，一共讲了，JS解析的过程，作用域，以及闭包！ 先来看一下解析的过程吧 同CSS代码一样，解析从上往下解析！ js的声明，var 和 function 一样都属于声明  不过function的权重比var高 ，默认值:undefined; 12alert(a)//undefinedvar a=1;">
+<meta name="keywords" content="javascript作用域">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript作用域">
+<meta property="og:url" content="http://yoursite.com/2018/03/15/javascript作用域/index.html">
 <meta property="og:site_name" content="Tang个人博客">
-<meta property="og:description" content="执着一份不知道结果的事，抹去这份未知的遗憾！">
+<meta property="og:description" content="作用域 对于我来说作用域也确实是个比较难学的一章了，而且这个又是整个JS中比较重要的章节！ 在这章，一共讲了，JS解析的过程，作用域，以及闭包！ 先来看一下解析的过程吧 同CSS代码一样，解析从上往下解析！ js的声明，var 和 function 一样都属于声明  不过function的权重比var高 ，默认值:undefined; 12alert(a)//undefinedvar a=1;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-15T16:32:01.781Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tang个人博客">
-<meta name="twitter:description" content="执着一份不知道结果的事，抹去这份未知的遗憾！">
+<meta name="twitter:title" content="javascript作用域">
+<meta name="twitter:description" content="作用域 对于我来说作用域也确实是个比较难学的一章了，而且这个又是整个JS中比较重要的章节！ 在这章，一共讲了，JS解析的过程，作用域，以及闭包！ 先来看一下解析的过程吧 同CSS代码一样，解析从上往下解析！ js的声明，var 和 function 一样都属于声明  不过function的权重比var高 ，默认值:undefined; 12alert(a)//undefinedvar a=1;">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/javascript/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/15/javascript作用域/"/>
 
 
 
 
 
-  <title>分类: javascript | Tang个人博客</title>
+  <title>javascript作用域 | Tang个人博客</title>
   
 
 
@@ -159,7 +161,7 @@
     
   
 
-  <div class="container sidebar-position-right ">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
       
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,251 +300,283 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>javascript<small>分类</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/15/javascript作用域/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="留不住的岁月">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/background.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tang个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/15/javascript作用域/" itemprop="url">
-              
-                <span itemprop="name">javascript作用域</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">javascript作用域</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-15T23:31:50+08:00"
-              content="2018-03-15" >
-          03-15
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-15T23:31:50+08:00">
+                2018-03-15
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/13/javascript购物结算/" itemprop="url">
-              
-                <span itemprop="name">javascript购物结算反选原理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-13T00:09:29+08:00"
-              content="2018-03-13" >
-          03-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/11/javascript运算符/" itemprop="url">
-              
-                <span itemprop="name">javascript运算符制作计算器</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-11T21:07:57+08:00"
-              content="2018-03-11" >
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/09/javasript基础/" itemprop="url">
-              
-                <span itemprop="name">Javascript for循环</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-09T19:52:45+08:00"
-              content="2018-03-09" >
-          03-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><ul>
+<li>对于我来说作用域也确实是个比较难学的一章了，而且这个又是整个JS中比较重要的章节！</li>
+<li>在这章，一共讲了，JS解析的过程，作用域，以及闭包！</li>
+<li>先来看一下解析的过程吧</li>
+<li>同CSS代码一样，解析从上往下解析！</li>
+<li><p>js的声明，var 和 function 一样都属于声明  不过function的权重比var高 ，默认值:undefined;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alert(a)//undefined</span><br><span class="line">var a=1;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解析：</p>
+</li>
+<li>首先找声明var a= undefined;</li>
+<li>然后是执行弹窗 alert(a)//undefined；</li>
+<li><p>最后是 赋值  a=1;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var a=1;</span><br><span class="line">alert(a)//1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码从上到下解析，只不过解析时是先声明再执行！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">alert(a)//function</span><br><span class="line">var a =1;</span><br><span class="line">alert(a)//1</span><br><span class="line">function a()&#123;</span><br><span class="line">	alert(a)</span><br><span class="line">&#125;</span><br><span class="line">a()//报错</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上面代码解析：</p>
+</li>
+<li>先声明：var a = undfined; a();</li>
+<li>执行：由于函数权重高所以优先alert(a)//function</li>
+<li>然后是 a=1  赋值</li>
+<li>执行：alert(a)//1</li>
+<li><p>最后执行函数alert(a)找不到就报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var a = 0;</span><br><span class="line">function fn() &#123;</span><br><span class="line">    alert(a)//und</span><br><span class="line">    var a = 1;</span><br><span class="line">    alert(a)//1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fn();</span><br><span class="line">alert(a)//0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先声明 var a=0;</p>
+</li>
+<li>执行 进去函数域 var a =und 然后是赋值 a =1</li>
+<li>所上面的是 und   下面的是 1   </li>
+<li><p>最底下的毫无疑问0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fn();</span><br><span class="line"></span><br><span class="line">alert(a)//1</span><br><span class="line"></span><br><span class="line">var a = 0;</span><br><span class="line"></span><br><span class="line">alert(a)//0</span><br><span class="line"></span><br><span class="line">function fn() &#123;</span><br><span class="line">    a = 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>首先找声明  var a  fn()</p>
+</li>
+<li>执行  fn(); a=1为全局;所以第一个弹1</li>
+<li>然后又a=0 赋值   所以弹0</li>
+<li>下面这个是老师的一个笔记 带有解析顺序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">*       fn()&#123;&#125;var a = 5;</span><br><span class="line">function fn() &#123;</span><br><span class="line">    var a = 10;</span><br><span class="line">    alert(a)</span><br><span class="line">    function b() &#123;</span><br><span class="line">        a++;</span><br><span class="line">        alert(a)</span><br><span class="line">    &#125;</span><br><span class="line">    return b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var c = fn();</span><br><span class="line">c();</span><br><span class="line">fn()();</span><br><span class="line">c();</span><br><span class="line">// 10  11 10  11</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">*   1.  var a ;</span><br><span class="line">*       var c;</span><br><span class="line">*   2.  a = 5;</span><br><span class="line">*       fn()    ---&gt;    1.var a;</span><br><span class="line">*                         b()&#123;&#125;;</span><br><span class="line">*                       2. a = 10</span><br><span class="line">*                           alert(a)</span><br><span class="line">*                           return b;</span><br><span class="line">* </span><br><span class="line">*       c = b()&#123;&#125;;</span><br><span class="line">*       c();   --- &gt;  2. a++; // a= 11</span><br><span class="line">*                       alert(a)    // 11</span><br><span class="line">*</span><br><span class="line">*       fn()    ---&gt;    1.var a;</span><br><span class="line">*                         b()&#123;&#125;;</span><br><span class="line">*                       2. a = 10</span><br><span class="line">*                           alert(a)</span><br><span class="line">*                           return b;</span><br><span class="line">*</span><br><span class="line">*        c = b()&#123;&#125;;</span><br><span class="line">*       fn()();   --- &gt;  2. a++; // a= 11</span><br><span class="line">*                       alert(a)    // 11</span><br><span class="line">*</span><br><span class="line">*</span><br><span class="line">*</span><br><span class="line">*       c();</span><br><span class="line">*</span><br><span class="line">* </span><br><span class="line">* */</span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/06/javasript正则/" itemprop="url">
-              
-                <span itemprop="name">Javascript正则</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-06T23:12:23+08:00"
-              content="2018-03-06" >
-          03-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    </div>
+    
+    
+    
+    <!-- ph添加，增加文章版权 -->
+    <div>
       
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/05/javasript_1运动/" itemprop="url">
-              
-                <span itemprop="name">Javascript运动</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-05T23:57:01+08:00"
-              content="2018-03-05" >
-          03-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/05/javasript_1仿JQ内容加载函数封装包兼容IE8以下/" itemprop="url">
-              
-                <span itemprop="name">仿JQ内容加载函数封装包兼容IE8以下</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-05T00:30:26+08:00"
-              content="2018-03-05" >
-          03-05
-        </time>
-      </div>
-
-    </header>
-  </article>
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- <p><span>本文标题:</span><a href="/2018/03/15/javascript作用域/">javascript作用域</a></p> -->
+  <p><span>本文链接:</span><a href="/2018/03/15/javascript作用域/" title="javascript作用域">http://yoursite.com/2018/03/15/javascript作用域/</a> <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/03/15/javascript作用域/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p>
+    <span>本文作者:</span><a href="/" title="访问 留不住的岁月 的个人博客">留不住的岁月</a>    
+  </p>
+  <p>
+    <span>发布时间:</span>2018年03月15日 - 23:03    
+  </p>
+  <p>
+    <span>最后更新:</span>2018年03月16日 - 00:03
+  </p>
+  
+   
+  <p>转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
 
 
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/04/javasript_1仿JQ操作/" itemprop="url">
-              
-                <span itemprop="name">仿JQ操作CSS</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-04T17:44:08+08:00"
-              content="2018-03-04" >
-          03-04
-        </time>
-      </div>
-
-    </header>
-  </article>
 
 
       
     </div>
+    <!-- ph结束 -->
+    
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>纯手打字分享，多谢支持！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
 
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.png" alt="留不住的岁月 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript作用域/" <i class="fa fa-tag"></i> javascript作用域</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/13/javascript购物结算/" rel="next" title="javascript购物结算反选原理">
+                <i class="fa fa-chevron-left"></i> javascript购物结算反选原理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -550,6 +584,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDU2MS8xMTA5OQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -570,8 +613,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -638,6 +690,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#作用域"><span class="nav-number">1.</span> <span class="nav-text">作用域</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -789,6 +857,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -817,6 +889,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
