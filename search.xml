@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js值转换表]]></title>
+    <url>%2F2018%2F03%2F18%2Fjs%E5%80%BC%E8%BD%AC%E6%8D%A2%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[值转换 这个是课上老师分享的一个转换表！]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[javascript作用域之return]]></title>
     <url>%2F2018%2F03%2F18%2Fjavascript%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B9%8Breturn%2F</url>
     <content type="text"><![CDATA[函数Return 这是一个函数返回值，默认undefined，作用是返回出自已需要的变量或是结果！ 其实这个字面意思很简单，只不过对于函数来说用法确是很多种： 12345678910 function a()&#123; var b=1; function c()&#123; b++; alert(b)//2 &#125; alert(b)//1 return c;&#125;a()(); 案例分析 先声明外面没有直接进函数作用域里面看：var b 执行： alert(b)//1 每一个函数都有一个作用域，里面的可以访问外面，外面的不可以访问里面，所以结果是b赋值1 接着进入c() 函数 b++ 子级没有声明b然后向父级找，找到 b=1 ,所以此时b等于2 最后用return 把c执行完的结果返回出去！ a()这是执行a()函数，a里面又有个c函数，所以再加(); 123456 function a()&#123; var b=1; retrun alert(b)&#125;var c=a();c();//1 首先找声明：var c 然后看函数内作用域声明:var b a()函数赋给了C,然后再执行函数通过return返回结果1]]></content>
