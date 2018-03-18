@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[javascript作用域之return]]></title>
+    <url>%2F2018%2F03%2F18%2Fjavascript%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B9%8Breturn%2F</url>
+    <content type="text"><![CDATA[函数Return 这是一个函数返回值，默认undefined，作用是返回出自已需要的变量或是结果！ 其实这个字面意思很简单，只不过对于函数来说用法确是很多种： 12345678910 function a()&#123; var b=1; function c()&#123; b++; alert(b)//2 &#125; alert(b)//1 return c;&#125;a()(); 案例分析 先声明外面没有直接进函数作用域里面看：var b 执行： alert(b)//1 每一个函数都有一个作用域，里面的可以访问外面，外面的不可以访问里面，所以结果是b赋值1 接着进入c() 函数 b++ 子级没有声明b然后向父级找，找到 b=1 ,所以此时b等于2 最后用return 把c执行完的结果返回出去！ a()这是执行a()函数，a里面又有个c函数，所以再加(); 123456 function a()&#123; var b=1; retrun alert(b)&#125;var c=a();c();//1 首先找声明：var c 然后看函数内作用域声明:var b a()函数赋给了C,然后再执行函数通过return返回结果1]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript作用域</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Js类名调用封装]]></title>
     <url>%2F2018%2F03%2F18%2FJs%E7%B1%BB%E5%90%8D%E8%B0%83%E7%94%A8%E5%B0%81%E8%A3%85%2F</url>
     <content type="text"><![CDATA[class类名调用封装和移除 下面带有注释，没有简写，过程也比较容易理解！！12345678910111213141516171819202122232425262728293031// 添加类名 function classN(obj,name)&#123; var arr1=obj.className.split(&apos; &apos;);//分割原有 var arr2=name.split(&apos; &apos;);//分割新加的 var arry=aar1.concat(arr2);//拼接组数 for (var i = 0; i&lt;arry.length; i++) &#123; for (var e = arry.length-1; e&gt;i; e--)&#123; if(arry==&apos; &apos;)&#123;//当数组中有空的时候 arry.splice(e,1)//拿出第E个删除 &#125; if(arry[e]==arry[i])&#123;//当数组中e个和i个相等的时候 arry.splice(e,1) &#125; &#125; &#125; obj.className=arry.join(&apos; &apos;); &#125; //移除类名 function remove(obj,name)&#123; var arr1=obj.className.split(&apos; &apos;);//分割原有 var arr2=name.split(&apos; &apos;);//分割新加的 for(var i=0;i&lt;arr2.length;i++)&#123; for(var e=arr1.length-1;e&gt;=0;e--)&#123; if(arr2[i]==arr1[e])&#123; arr1.splice(e,1); &#125; &#125; &#125; obj.className=arr1.join(&apos; &apos;); &#125;]]></content>
