@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[5种JS判断数据类型]]></title>
+    <url>%2F2018%2F03%2F23%2F5%E7%A7%8DJS%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[判断js数据类型，也就是我们说的类型检测，本文提供五种方法，分别是typeof运算符、instanceof操作符、Object.prototype.toString方法、constructor属性、duck type。 1、typeof运算符—-最常见12345678910console.log(&quot;测试number:&quot;+typeof 1);console.log(&quot;测试string:&quot;+typeof &quot;str&quot;);console.log(&quot;测试false:&quot;+typeof false);console.log(&quot;测试null:&quot;+typeof null);console.log(&quot;测试undefined:&quot;+typeof undefined);console.log(&quot;测试Object:&quot;+typeof new Object());console.log(&quot;测试Object:&quot;+typeof new Array());console.log(&quot;看看typeof NaN是啥:&quot;+typeof NaN);console.log(&quot;我想看看数组［1，2，3]类型:&quot;+typeof [1,2,3]);console.log(&quot;看看function是啥:&quot;+typeof function()&#123;&#125;); 1、instanceof操作符（基于原型链） obj instanceof Object，左边操作数obj为对象（如果不小心写成基本类型比如数字啥的，就会返回false），右边操作数Object为函数对象或者是函数构造器，否则抛出TypeError。 3、Object.prototype.toString方法 要想区别对象、数组、函数单纯使用typeof是不行的，JavaScript中,通过Object.prototype.toString方法，判断某个对象值属于哪种内置类型。12345678 //例子： var arr = []; console.log(Object.prototype.toString.call(arr)) //结果：// &quot;[object Array]&quot; 4、constructor属性 所有实例对象都有constructor属性，constructor属性指向prototype对象所在的构造函数，就是说指向创建这个实例的构造函数. 5、duck type（鸭子类型） 比如判断一个对象是否是数组，可以看这个对象是否拥有length()等方法，不禁想到类数组转数组的方法，看这里类数组转数组了]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[时间]]></title>
     <url>%2F2018%2F03%2F21%2F%E6%97%B6%E9%97%B4%2F</url>
     <content type="text"><![CDATA[青春，它让我们的生命之歌传到遥远的地方。 时间过的很快，转眼即是一年，可能以前都不会这么在意时间，突然之间觉得它太快了，快的让我觉得自己还有很多事情没有去做。 过去的已然过去，生活的苟且不得不让人继续努力前进！ 纯真的童年时光还历历在目，转眼间却已成为一个大人。有时想着父母，会感怀自己哪一天也会垂垂老去。但人生不能只由伤怀组成，我们应该微笑。正因为人生短暂，更应珍惜每一个美好的瞬间和每一丝真诚的感动，担负属于自己的每一份责任。]]></content>
