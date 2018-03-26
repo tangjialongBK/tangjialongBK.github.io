@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[bind的兼容方法]]></title>
+    <url>%2F2018%2F03%2F26%2Fbind%E7%9A%84%E5%85%BC%E5%AE%B9%E6%96%B9%E6%B3%95%E5%B0%81%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[由于bind这个方法在IE8以下是无法支持的，所以要一个兼容方法，该方法一定要写在使用前面方可有效，可以自行封装，在代码最上面执行即可！ 1234567891011if(!Function.prototype.bind) &#123; // 找函数下面是不是有这个方法 function.prototype.bind = function(This) &#123; var bindThis = this; // 调用这个变量的函数 var arr = [].slice.call(arguments,1) // 把数组的方面通过call拿给类数组用，用于拿出第一个实参 return function () &#123; // 返回一个函数 bindThis.apply(This,arr) // 当前this下面有一个apply方法，由于接收参数已经变数组所以用apply &#125; &#125; &#125; 其实这个方法只是用apply取代了bind，因为apply方法兼容所有浏览器！]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JS闭包面试题分析]]></title>
     <url>%2F2018%2F03%2F25%2F%E9%97%AD%E5%8C%85%E9%9D%A2%E8%AF%95%E9%A2%98%E5%88%86%E6%9E%90%2F</url>
     <content type="text"><![CDATA[这个题是一个闭包面试题，其实第一眼看到，我是蒙蔽的，return再return给我一种很乱的错觉，听了老师的分析后，再冷静下来仔细一看，就顺利的走了出来！ 看下这个结果： 1234var a=fun(0);a.fun(1);a.fun(2);a.fun(3); 首先传进一个0，n接收，执行打印console.log(o)//undefined这个没有传所以拿不到，接着返回一个对象JSON 接着a.fun(1),由于上面fun赋给了a所以a就代表return出来的那个json名字，里面有一个函数属性fun，传进去一个1,这时又是一个返回，此时m=1,n没有，到父级找，找到0，因为之前传了一个0；此时结果是1和0再n和o接收，打印时o就是0了！ 下面传2传3方法也是如此，要注意的是fun(m,n)这里返回出去的一定是实参！ 之于这种写法：fun(0).fun(1)….这个是在本身上继续执行，和上面的还是有区别的，这种写法就会一直保存着这个n！ 来看一下，第一个传进0，n=0,o=undefined，返回对象，再传1,m=1,n=0,结果1和0，再继续传2，m=2,n=1,结果2和1，以此类推… 说实话确实有点绕，其实理一理也就那么一回事！！！！]]></content>
